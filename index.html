@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>22.06.2025</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="pt-br">
+<head>
+    <meta name="author" content="MohamedDine">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22.06.2025</title>
+</head>
+<body>
+    <div class="card">
+        <div class="heart-container">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <path class="heart" d="M50 88.9L16.7 55.6C7.2 46.1 7.2 30.9 16.7 21.4s24.7-9.5 34.2 0L50 20.5l-0.9 0.9c9.5-9.5 24.7-9.5 34.2 0s9.5 24.7 0 34.2L50 88.9z"/>
+                <path class="broken-heart" d="M50 88.9L16.7 55.6C7.2 46.1 7.2 30.9 16.7 21.4s24.7-9.5 34.2 0L50 20.5l-0.9 0.9c9.5-9.5 24.7-9.5 34.2 0s9.5 24.7 0 34.2L50 88.9z"/>
+                <circle class="sparkle" cx="25" cy="25" r="2"/>
+                <circle class="sparkle" cx="75" cy="25" r="2"/>
+                <circle class="sparkle" cx="50" cy="15" r="2"/>
+            </svg>
+        </div>
+
+        <div class="question active" id="q1">
+            <h1 class="message">Você tem certaza que quer saber o que tem aqui? 💝</h1>
+            <div class="btn-container">
+                <button class="btn" onclick="nextQuestion(true, 1)">Sim!</button>
+                <div class="no-btn-container">
+                    <button class="btn no" onclick="handleNo()" onmouseover="dodgeNo()">Não!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q2">
+            <h1 class="message">Quer ser a minha pequena noiva? 🤍💐</h1>
+            <div class="btn-container">
+                <button class="btn" onclick="nextQuestion(true, 2)">Claro!</button>
+                <div class="no-btn-container">
+                    <button class="btn" onclick="nextQuestion(true, 2)" onmouseover="dodgeNo()">Óbvio!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="question" id="q3">
+            <h1 class="message">Sempre farei o possível e o impossível para você não se arrepender dessa escolha!🤍💍 </h1>
+            <div class="btn-container">
+                <button class="btn" onclick="nextQuestion(true, 3)">Te amo mil galáxias!🌌💙</button>
+                
+            </div>
+        </div>
+
+        <div class="question" id="final">
+            <h1 class="message">Feliz primeiro dia de noivado, minha pequena!🤍</h1>
+            <span class="data">22.06.2025</span>
+        </div>
+        <div class="question" id="rejected">
+            <h1 class="message">😢 Sério!?</h1>
+            <div class="btn-container">
+                <button class="btn" onclick="resetQuestions()">Tá bom...</button>
+            </div>
+        </div>
+        <div class="floating-hearts"></div>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
